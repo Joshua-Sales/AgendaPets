@@ -1,0 +1,22 @@
+# Dependências
+node_modules/
+
+# Variáveis de Ambiente (Contém sua Web API Key)
+.env
+
+# Credenciais do Firebase (Protege qualquer arquivo de chave do Admin SDK)
+*-firebase-adminsdk-*.json
+*.json.local
+
+# Configurações de IDE (VS Code, WebStorm, etc)
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
