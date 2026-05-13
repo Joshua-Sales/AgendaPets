@@ -4,6 +4,9 @@ node_modules/
 # Variáveis de Ambiente (Contém sua Web API Key)
 .env
 
+# Configurações específicas de inicialização do Firebase
+firebase.js
+
 # Credenciais do Firebase (Protege qualquer arquivo de chave do Admin SDK)
 *-firebase-adminsdk-*.json
 *.json.local
