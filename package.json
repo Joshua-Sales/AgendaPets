@@ -1,21 +1,45 @@
 {
-  "name": "agendapets-backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.18.2",
-    "firebase-admin": "^13.8.0",
-    "twilio": "^6.0.2"
-  },
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+	"name": "agendapets",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"seed": "tsx scripts/seed.ts"
+	},
+	"devDependencies": {
+		"@internationalized/date": "^3.12.1",
+		"@lucide/svelte": "^1.16.0",
+		"@sveltejs/adapter-node": "^5.5.4",
+		"@sveltejs/kit": "^2.57.0",
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"@tailwindcss/vite": "^4.2.2",
+		"@types/bcryptjs": "^2.4.6",
+		"@types/better-sqlite3": "^7.6.13",
+		"@types/jsonwebtoken": "^9.0.10",
+		"svelte": "^5.55.2",
+		"svelte-check": "^4.4.6",
+		"tailwindcss": "^4.2.2",
+		"tsx": "^4.22.3",
+		"typescript": "^6.0.2",
+		"vite": "^8.0.7"
+	},
+	"dependencies": {
+		"bcryptjs": "^3.0.3",
+		"better-sqlite3": "^12.10.0",
+		"bits-ui": "^2.18.1",
+		"clsx": "^2.1.1",
+		"jsonwebtoken": "^9.0.3",
+		"lucide-svelte": "^1.0.1",
+		"reflect-metadata": "^0.2.2",
+		"tailwind-merge": "^3.6.0",
+		"tailwind-variants": "^3.2.2",
+		"twilio": "^6.0.2",
+		"typeorm": "^1.0.0"
+	}
 }
